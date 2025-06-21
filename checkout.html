@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Clothify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total-amount">0</span></h3>
+
+    <h2>Pay with GPay</h2>
+    <p>Scan the QR or send to <strong>clothify@okaxis</strong></p>
+    <img src="assets/gpay-qr.png" alt="GPay QR" class="qr">
+
+    <form id="payment-form">
+      <label for="txn-id">Enter GPay Transaction ID:</label><br>
+      <input type="text" id="txn-id" required><br>
+      <button type="submit">Submit Payment</button>
+    </form>
+    <p id="payment-status"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clothify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
